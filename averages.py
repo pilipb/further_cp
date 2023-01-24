@@ -41,6 +41,10 @@ if "file" in flags:
         all_args = file.read().split()
         print(all_args)
 
+        # convert list all_args to floats
+        for i in range(len(all_args)):
+            all_args[i] = float(all_args[i])
+
         for flag in flags:
             if flag == "mean":
                 mean = mean(all_args)
