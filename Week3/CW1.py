@@ -100,8 +100,12 @@ def check_solution(grid_input):
 	'''
 	This function is used to check whether a sudoku board has been correctly solved
 
-	args: grid - representation of a suduko board as a nested list.
-	returns: True (correct solution) or False (incorrect solution)
+	Parameters:
+	grid - array: representation of a suduko board as a nested list.
+
+	Return:
+	boolean: True if the sudoku board is correctly solved, False otherwise
+	
 	'''
 	# sudoku is correct if all rows, columns and boxes have no duplicates
 	# extract the actual grid
